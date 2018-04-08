@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+     <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+     <title>{% block title %}AD4T Title{% endblock %}</title>
+     <meta charset="UTF-8">
+  </head>
+  <body>
+    {% if error %}
+    {% endif %}
+    <div class="topnav">
+      <a {% block home_active %} {% endblock %} href='/'>Accueil</a>
+      <a {% block contacts_active %} {% endblock %} href='/contacts/'>Contacts</a>
+{% if user.is_authenticated %}
+      <a {% block ressources_active %} {% endblock %} href='/ressources/'>Ressources</a>
+      <a {% block passes_active %} {% endblock %} href='/passes/'>Passes</a>
+      <a {% block blog_active %} {% endblock %} href='/blog/'>Blog</a>
+      <a {% block disconnect_active %} {% endblock %} href='/login/disconnect'>Se déconnecter</a>
+{% else %}
+      <a {% block connect_active %} {% endblock %} href='/login/connect'>Se connecter</a>
+{% endif %}
+    </div>
+
+    <header>AD4T</header>
+      <section id="content">
+{% block content %}
+{% endblock %}
+      </section>
+    <footer>&copy; AD4T</footer>
+
+    <script src="{% static 'js/base.js' %}"></script>
+  </body>
+</html>
