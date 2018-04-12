@@ -3,5 +3,94 @@
 {% block title %}Contacts{% endblock %}
 {% block contacts_active %}class="active"{% endblock %}
 {% block content %}
-  <h1> Contacts </h1>
+<section>
+
+  <!--Section heading-->
+  <h2 class="text-center h1 py-5">Contactez-nous !</h2>
+  <!--Section description-->
+  <p class="text-center mb-5">Notre secrétariat se tient à votre disposition pour toute demande d'information concernant nos activités.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-8 col-xl-9">
+          <form>
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form">
+                          <input type="text" id="contact-name" class="form-control">
+                          <label for="contact-name" class="">Nom</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form">
+                          <input type="text" id="contact-email" class="form-control">
+                          <label for="contact-email" class="">E-mail</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form">
+                          <input type="text" id="contact-Subject" class="form-control">
+                          <label for="contact-Subject" class="">Sujet</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                          <label for="contact-message">Message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary btn-md">Envoyer</a>
+          </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-4 col-xl-3 text-center">
+          <ul class="list-unstyled">
+              <li>
+                  <i class="fa fa-map-marker fa-2x blue-text"></i>
+                  <p>Académie de Danse 4 Temps</p>
+              </li>
+
+              <li>
+                  <i class="fa fa-envelope fa-2x mt-4 blue-text"></i>
+                  <p>secreteriat@4temps.org</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
 {% endblock %}
