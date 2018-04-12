@@ -1,0 +1,15 @@
+*.pyc
+AD4T/__pycache__
+AD4T/migrations
+contacts/__pycache__
+contacts/migrations
+home/__pycache__
+home/migrations
+blog/__pycache__
+blog/migrations
+login/__pycache__
+login/migrations
+passes/__pycache__
+passes/migrations
+ressources/__pycache__
+ressources/migrations
