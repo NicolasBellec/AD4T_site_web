@@ -37,7 +37,7 @@
                         <a {% block home_active %} {% endblock %} class="nav-link" href="/">Accueil</a>
                     </li>
                     <li class="nav-item">
-                        <a {% block contacts_active %} {% endblock %} class="nav-link" href="/contacts/">Contact</a>
+                        <a {% block contact_active %} {% endblock %} class="nav-link" href="/contact/">Contact</a>
                     </li>
 {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -96,7 +96,7 @@
               <!--Grid column-->
               <div class="col-md-2 mb-3">
                   <h6 class="text-uppercase font-weight-bold">
-                      <a href="/contacts">Contact</a>
+                      <a href="/contact">Contact</a>
                   </h6>
               </div>
               <!--Grid column-->
