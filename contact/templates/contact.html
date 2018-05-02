@@ -15,15 +15,22 @@
       <!--Grid column-->
       <div class="col-md-8 col-xl-9">
           <form>
-
+              {% csrf_token %}
+              {{ form.non_field_errors }}
+              
               <!--Grid row-->
               <div class="row">
 
                   <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form">
-                          <input type="text" id="contact-name" class="form-control">
+                          <!--<input type="text" id="contact-name" name="Nom" class="form-control">
                           <label for="contact-name" class="">Nom</label>
+                          -->
+                          {{ form.name.errors }}
+                          {{ form.name.label_tag }}
+                          {{ form.name }}
+
                       </div>
                   </div>
                   <!--Grid column-->
@@ -31,8 +38,12 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                       <div class="md-form">
-                          <input type="text" id="contact-email" class="form-control">
+                          <!--<input type="text" id="contact-email" class="form-control">
                           <label for="contact-email" class="">E-mail</label>
+                          -->
+                          {{ form.email.errors }}
+                          {{ form.email.label_tag }}
+                          {{ form.email }}
                       </div>
                   </div>
                   <!--Grid column-->
@@ -44,8 +55,12 @@
               <div class="row">
                   <div class="col-md-12">
                       <div class="md-form">
-                          <input type="text" id="contact-Subject" class="form-control">
+                          <!--<input type="text" id="contact-Subject" class="form-control">
                           <label for="contact-Subject" class="">Sujet</label>
+                          -->
+                          {{ form.subject.errors }}
+                          {{ form.subject.label_tag }}
+                          {{ form.subject }}
                       </div>
                   </div>
               </div>
@@ -58,19 +73,24 @@
                   <div class="col-md-12">
 
                       <div class="md-form">
-                          <textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
+                          <!--<textarea type="text" id="contact-message" class="form-control md-textarea" rows="3"></textarea>
                           <label for="contact-message">Message</label>
+                          -->
+                          {{ form.message.errors }}
+                          {{ form.message.label_tag }}
+                          {{ form.message }}
                       </div>
 
                   </div>
               </div>
               <!--Grid row-->
 
-          </form>
 
-          <div class="text-center text-md-center">
-              <a class="btn btn-unique btn-md">Envoyer</a>
-          </div>
+
+              <div class="text-center text-md-center">
+                  <input type="submit" class="btn btn-unique btn-md" value="Envoyer">
+              </div>
+          </form>
       </div>
       <!--Grid column-->
 
