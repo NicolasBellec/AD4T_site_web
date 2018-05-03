@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Contacts{% endblock %}
-{% block contacts_active %}class="active"{% endblock %}
+{% block title %}Contact{% endblock %}
+{% block contact_active %}class="active"{% endblock %}
 {% block content %}
 <section>
 
@@ -14,10 +14,10 @@
 
       <!--Grid column-->
       <div class="col-md-8 col-xl-9">
-          <form>
+          <form method="post" action=".">
               {% csrf_token %}
               {{ form.non_field_errors }}
-              
+
               <!--Grid row-->
               <div class="row">
 
