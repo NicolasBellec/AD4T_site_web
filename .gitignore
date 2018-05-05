@@ -1,8 +1,8 @@
 *.pyc
 AD4T/__pycache__
 AD4T/migrations
-contacts/__pycache__
-contacts/migrations
+contact/__pycache__
+contact/migrations
 home/__pycache__
 home/migrations
 blog/__pycache__
