@@ -54,7 +54,7 @@
                     </li>
 {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" {% block connect_active %} {% endblock %} href="/login/connect">Se connecter</a>
+                        <a {% block connect_active %} {% endblock %} class="nav-link" href="/login/connect">Se connecter</a>
                     </li>
 {% endif %}
                 </ul>

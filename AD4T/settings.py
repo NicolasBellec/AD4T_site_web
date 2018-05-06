@@ -146,7 +146,6 @@ EMAIL_SUBJECT_PREFIX = '[Django] '
 EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
 #'django.core.mail.backends.console.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'tmp/email/app-mail')
-
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_HOST_USER =
 #EMAIL_HOST_PASSWORD =
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

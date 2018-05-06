@@ -36,5 +36,4 @@ def contact(request):
     else:
         form = forms.ContactForm()
 
-
     return render(request, 'contact.html', locals())
