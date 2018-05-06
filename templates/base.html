@@ -25,55 +25,34 @@
     {% endif %}
 
     <!--Main Navigation-->
-    <header>
-        <nav class="navbar navbar-expand-lg blue-grey lighten-5">
-            <a class="navbar-brand sticky-top" href="/">
-                <img src="{% static 'img/logo.png' %}" height="100" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav m-auto">
-                    <li class="nav-item {{home_active}}">
-                        <a class="nav-link" href="/contacts/">Accueil</a>
-                    </li>
-                    <li class="nav-item {{about_active}}">
-                      <a class="nav-link" href="/about">Découvrir l'AD4T</a>
-                    </li>
-                    <li class="nav-item {{news_active}}">
-                      <a class="nav-link" href="/news">News</a>
-                    </li>
-                    <li class="nav-item {{rejoin_active}}">
-                      <a class="nav-link" href="/rejoin">Adhérer</a>
-                    </li>
-                    <li class="nav-item {{contacts_active}}">
-                      <a class="nav-link" href="/contacts/">Contact</a>
-                    </li>
-{% if user.is_authenticated %}
-                    <li class="nav-item {{ressources_active}}">
-                        <a class="nav-link" href="/ressources/">Ressources</a>
-                    </li>
-                    <li class="nav-item {{passes_active}}">
-                        <a class="nav-link" href="/passes/">Passes</a>
-                    </li>
-                    <li class="nav-item {{blog_active}}">
-                        <a class="nav-link" href="/blog/">Blog</a>
-                    </li>
-                    <li class="nav-item {{disconnect_active}}">
-                        <a class="nav-link" href="/login/disconnect">Se déconnecter</a>
-                    </li>
-{% else %}
-{% endif %}
-                </ul>
-                <ul class="navbar-nav nav-flex-icons mr-5">
-                  <li class="nav-item {{connect_active}}">
-                    <a class="nav-link" href="/login/connect"><span class="badge badge-pill blue">Se connecter <i class="fa fa-user" aria-hidden="true"></i></span></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <header class="blog-header py-3 z-depth-1">
+      <div class="container">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-4 pt-1">
+            <a class="h5" href="/rejoin">Adhérer à l'AD4T</a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="blog-header-logo text-dark" href="/"><img src="{% static 'img/logo.png' %}" height="120" alt=""></a>
+          </div>
+          <div class="col-4 d-flex justify-content-end align-items-center">
+            <a class="h5" href="/rejoin">Connexion <i class="fa fa-user" aria-hidden="true"></i></a>
+          </div>
+        </div>
 
+        <div class="nav-scroller py-1 mb-2">
+          <nav class="nav d-flex justify-content-between">
+            <a class="p-2" href="#">News</a>
+            <a class="p-2" href="#">Projets</a>
+            <a class="p-2" href="#">À propos</a>
+            <a class="p-2" href="#">Contact</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Annuaire</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Blog</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Passes</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Structuration</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Ressources</a>
+          </nav>
+        </div>
+      </div>
     </header>
     <!--Main Navigation-->
 
@@ -159,8 +138,17 @@
   </footer>
   <!--/.Footer-->
 
+  <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>  // popovers Initialization
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
 
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+    </script>
   </body>
 </html>
