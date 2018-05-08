@@ -1,1 +1,11 @@
 /* Your custom styles */
+
+a:link {
+color: #B12727;
+}
+a:visited {
+color: #B12727;
+}
+a:hover {
+color: #7F1519;
+}
