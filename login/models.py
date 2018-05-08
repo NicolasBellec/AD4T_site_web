@@ -3,11 +3,11 @@ from django.utils import timezone
 
 # Create your models here.
 class Profil(models.Model):
-    user = models.OneToOneField(User)
+    #user = models.OneToOneField(User)
 
     name = models.CharField(max_length = 256)
     lastname = models.CharField(max_length = 256)
-    poles = models.Boolean
+    #poles = models.
 
     date = models.DateTimeField(default = timezone.now)
 

@@ -3,7 +3,7 @@ from . import views
 from . import forms
 
 urlpatterns = [
-    path('', views.connectView),
     path('connect', views.connectView),
+    path('subscribe', views.subscribeView),
     path('disconnect', views.disconnectView),
 ]

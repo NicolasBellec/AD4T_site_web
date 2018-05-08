@@ -48,16 +48,16 @@ def subscribeView(request):
             email = form.cleaned_data["email"]
 
             User.objects.filter(Q(name=name, lastname=lastname) | Q(email=email))
-            
-            if
+
+            #if
             # user = authenticate(username=username, password=password)  # Nous vérifions si les données sont correctes
             #
             # if user:  # Si l'objet renvoyé n'est pas None
             #     login(request=request, user=user)  # nous connectons l'utilisateur
             #     return redirect(home)
 
-            else: # sinon une erreur sera affichée
-                error = True
+            # else: # sinon une erreur sera affichée
+            #     error = True
 
     else:
         form = forms.LoginForm()

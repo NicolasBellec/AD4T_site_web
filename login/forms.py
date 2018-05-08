@@ -7,5 +7,5 @@ class LoginForm(forms.Form):
 class SubscribeForm(forms.Form):
     name = forms.CharField(label="Prénom", max_length=30)
     lastname = forms.CharField(label="Nom", max_length=30)
-    password = forms.CharField(label="Mot de passe", widget=form.PasswordInput)
+    password = forms.CharField(label="Mot de passe", widget=forms.PasswordInput)
     email = forms.EmailField(label="E-mail", label_suffix="", max_length=60)
