@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from member.views import validation, cancellation
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +25,8 @@ urlpatterns = [
     path('ressources/', include('ressources.urls')),
     path('contact/', include('contact.urls')),
     path('login/', include('login.urls')),
-    path('home/', include('home.urls'))
+    path('home/', include('home.urls')),
+    path('member/', include('member.urls')),
+    path('member:validation', validation),
+    path('member:cancellation', cancellation),
 ]

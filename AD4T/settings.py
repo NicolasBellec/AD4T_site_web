@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'ressources',
     'home',
     'login',
+    'member',
 ]
 
 MIDDLEWARE = [

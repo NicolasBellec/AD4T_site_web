@@ -13,3 +13,6 @@ passes/__pycache__
 passes/migrations
 ressources/__pycache__
 ressources/migrations
+member/__pycache__
+member/migrations
+db.sqlite3

@@ -1,16 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Login{% endblock %}
+{% block title %}Inscription{% endblock %}
 {% block content %}
 <h1>S'inscrire</h1>
-
-<!--
-{% if error %}
-
-<p><strong>Utilisateur inconnu ou mauvais de mot de passe.</strong></p>
-
-{% endif %}
--->
 
 {% if user.is_authenticated %}
 
@@ -24,7 +16,7 @@ Vous êtes déjà connecté, {{ user.username }} !
 
     {{ form.as_p }}
 
-    <input type="submit" value="Se connecter" />
+    <input type="submit" value="S'inscrire" />
 
 </form>
 
