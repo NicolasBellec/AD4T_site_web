@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from member.views import validation, cancellation
+from media.views import mediaView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,4 +30,5 @@ urlpatterns = [
     path('member/', include('member.urls')),
     path('member:validation', validation),
     path('member:cancellation', cancellation),
+    path('media/<str:slug>', mediaView),
 ]

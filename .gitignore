@@ -15,4 +15,6 @@ ressources/__pycache__
 ressources/migrations
 member/__pycache__
 member/migrations
+media/__pycache__
+media/migrations
 db.sqlite3

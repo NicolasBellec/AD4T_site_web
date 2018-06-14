@@ -42,13 +42,18 @@ def disconnectView(request):
 def userPayment(request, user):
     context = {}
 
-    return_url = 'https://'+DOMAIN+'login/validation'
-    cancel_url = 'https://'+DOMAIN+'login/cancellation'
+    return_url = 'https://'+DOMAIN+'/member/validation'
+    cancel_url = 'https://'+DOMAIN+'/member/cancellation'
+
+
+    # To recover on https://developer.paypal.com/developer/applications/ then edit application
+    client_id = 'AZc4oJL-IBxZQAf8G8MdtA9cNFbvZkD6DP3M_Vy98musoVhzoZU72eR_c7OI9fz93yOMENxAk6C6UNre'
+    secret = 'EDGBdsQHAy83WRe7MM7Zbxc9seWtdytGl9MZhCmLvC_eE_lQoQdXIURlED41zv1F4rO5qcd7-pCcIb6_'
 
     r_token = requests.post('https://api.sandbox.paypal.com/v1/oauth2/token',
                        headers={'Accept':'application/json',
                                 'Accept-Language':'FR'},
-                       auth=('XXXX','XXXX'), #TO DEFINE
+                       auth=(client_id,secret), #TO DEFINE
                        data={'grant_type':'client_credentials'})
 
     if r_token.status_code !=  200:
