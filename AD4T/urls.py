@@ -30,5 +30,5 @@ urlpatterns = [
     path('member/', include('member.urls')),
     path('member:validation', validation),
     path('member:cancellation', cancellation),
-    path('media/<str:slug>', mediaView),
+    path('media/<str:slug>', mediaView, name='media_url'),
 ]
