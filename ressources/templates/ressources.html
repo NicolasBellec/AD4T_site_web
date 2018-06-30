@@ -3,4 +3,12 @@
 {% block title %}Accueil AD4T{% endblock %}
 {% block content %}
   <h1> Ressources AD4T </h1>
+  {% for article in articles %}
+    <h2> Titre : {{ article.title }} </h2>
+    <h2> Titre lisible : {{ article.title_readable }} </h2>
+    <h2> Date : {{ article.date }} </h2>
+    <h2> Description : {{ article.description }} </h2>
+    <h2> Lien : {% url 'media_url' article.media.slug %} </h2>
+
+  {% endfor %}
 {% endblock %}
