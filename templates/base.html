@@ -105,7 +105,31 @@
               <!--Grid column-->
               <div class="col-md-2 mb-3">
                   <h6 class="text-uppercase font-weight-bold">
+                      <a href="/">Nos projets</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/">Adhérer</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
                       <a href="/contact">Contact</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/contact">News</a>
                   </h6>
               </div>
               <!--Grid column-->
@@ -113,14 +137,66 @@
           </div>
           <!--Grid row-->
 
+
+          {% if user.is_authenticated %}
+          <div class="row mb-3 text-center d-flex justify-content-center">
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/">Annuaire</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/">Blog</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/">Passes</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/contact">Structuration</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-2 mb-3">
+                  <h6 class="text-uppercase font-weight-bold">
+                      <a href="/contact">Ressources</a>
+                  </h6>
+              </div>
+              <!--Grid column-->
+
+          </div>
+          {% endif %}
+
+
+
           <hr class="rgba-white-light" style="margin: 0 15%;">
 
           <!--Grid row-->
           <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
 
               <!--Grid column-->
-              <div class="col-md-8 col-12 mt-5">
-                  <p style="line-height: 1.7rem">L'Académie de Danse 4 Temps est une association [TODO]</p>
+              <div class="col-md-10 col-12 mt-5">
+                  <p style="line-height: 1.7rem">
+                    L'Académie de Danse 4 Temps est une association œuvrant pour le développement de la Danse 4 Temps. <br />
+                    Elle s'adresse à tous les pratiquants de la discipline : rejoignez-nous et aidez-nous dans nos projets !
+                  </p>
 
               </div>
               <!--Grid column-->
