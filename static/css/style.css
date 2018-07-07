@@ -9,3 +9,31 @@ color: #B12727;
 a:hover {
 color: #7F1519;
 }
+
+
+/* .form-red .font-small {
+  font-size: 0.8rem; }
+
+.form-red .header {
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem; }
+
+.form-red input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid red;
+  -webkit-box-shadow: 0 1px 0 0 red;
+  box-shadow: 0 1px 0 0 red; }
+
+.form-red input[type=email]:focus:not([readonly]) {
+    border-bottom: 1px solid red;
+    -webkit-box-shadow: 0 1px 0 0 red;
+    box-shadow: 0 1px 0 0 red; }
+
+.form-red textarea:focus:not([readonly]) {
+    border-bottom: 1px solid red;
+  } */
+
+
+.form-red input[type=text]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
+.form-red input[type=textarea]:focus:not([readonly]) + label {
+  color: #4f4f4f; }
