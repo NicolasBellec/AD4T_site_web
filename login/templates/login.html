@@ -2,21 +2,31 @@
 {% load static %}
 {% block title %}Connexion{% endblock %}
 {% block content %}
-<h1>Se connecter</h1>
+<section class="form-red">
+  <!--Section heading-->
+  <h2 class="text-center h1 py-5">Se connecter</h2>
 
 {% if user.is_authenticated %}
-  Vous êtes connecté, {{ user.username }} !
+  <p class="text-center mb-5">Vous êtes connecté, {{ user.username }} !</p>
 {% else %}
 
-<form method="post">
+<!--Section description-->
 
-    {% csrf_token %}
+<div class="row">
 
-    {{ form.as_p }}
+  <!--Grid column-->
+  <div class="col text-center">
+    <form method="post">
+      {% csrf_token %}
 
-    <input type="submit" value="Se connecter" />
+      {{ form.as_p }}
 
-</form>
+      <input type="submit" class="btn btn-primary btn-md" value="Se connecter" />
+    </form>
+  </div>
+      <!--Grid column-->
+</div>
 
 {% endif %}
+</section>
 {% endblock %}
