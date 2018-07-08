@@ -5,186 +5,301 @@
 {% block content %}
 <section class="py-5">
   <!--Section heading-->
-  <h1 class="text-center display-4 py-5 mt-5">Développons la Danse 4 Temps !</h1>
+  <h1 class="text-center display-4 py-5">Découvrez nos projets</h1>
   <!--Section description-->
-  <p class="px-5 mb-5 pb-3 lead text-center">
+  <!-- <p class="px-5 lead text-center">
      Au sein de l'Académie de Danse 4 Temps (AD4T), nous organisons la Danse 4 Temps en tant que pratique sportive, artistique et sociale. Nous soutenons tous les acteurs du milieu dans le développement de leurs activités.
-  </p>
-  <p class="pt-5 text-center">
-    <em>L'Assemblée Générale 2018 aura lieu le dimanche 14 octobre à 14h. Toutes les informations sur notre <a href="#">Facebook</a>.</em>
-  </p>
+  </p> -->
 
 </section>
-</div>
 
-<div class="jarallax" data-jarallax='{"speed": 0.8}' style="background-image: url(http://localhost:8000/static/img/party.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100px;">
-<div class="mask rgba-red-strong">
-    <div class="container-fluid py-4 align-items-center justify-content-center text-white">
-      <div class="row mt-5 mb-2">
-        <div class="col-md-4 offset-md-6">
-          <h1> La Danse 4 Temps </h1>
-          <p>La Danse 4 Temps est une danse de couple. Elle est connue sous diverses appellations : c'est le "rock 4 temps", le "rock moderne", le "rock étudiant".</p>
-          <p>Toutes ces variantes sont représentées au sein de l'AD4T ; elles partagent notamment une technique de connexion similaire.</p>
-          <p>La Danse 4 Temps est une discipline jeune et pleine de promesses, qui a dépassé ses racines swing pour se forger une identité propre.</p>
-          <p class="text-center"><a class="btn" hfref="#">Découvrir</a></p>
+<section class="mb-5">
+
+  <div class="row">
+    <div class="col-lg-3 offset-lg-1 mb-lg-0 mb-5">
+      <img src="{% static 'img/poles/ethique.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+    </div>
+
+    <div class="col-lg-7">
+      <h3 class="text-center font-weight-bold deep-purple-text">Éthique</h3>
+
+      <div class="row">
+        <div class="col-md-1 col-2">
+          <i class="fa fa-book fa-2x deep-purple-text"></i>
+        </div>
+        <div class="col-md-11 col-10">
+          <p>Le pôle Éthique a pour vocation de %%TODO%%</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-1 col-2">
+          <i class="fa fa-code fa-2x deep-purple-text"></i>
+        </div>
+        <div class="col-md-11 col-10">
+          <p>Il travaille aux projets suivants :</p>
+          <ul>
+            <li>Charte déontologique des professeurs et juges</li>
+            <li>Danseur éthique</li>
+            <li>Arbitrage de conflits</li>
+            <li>Charte de l'association</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-<section class="my-5">
-    <!--Section heading-->
-    <h1 class="display-4 text-center py-5">
-        Quelques-unes de nos réalisations
-    </h1>
-    <!--Grid row-->
-    <div class="row text-center">
+  <hr class="my-5">
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-12 mb-4">
+  <div class="row">
+    <div class="col-lg-7 offset-lg-1">
+      <h3 class="text-center font-weight-bold cyan-text">Passes</h3>
 
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/communication.png' %}" class="img-fluid" alt="Sample project image">
-                <a>
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4>
-                    <strong>Juillet 2017</strong>
-                </h4>
-                <p>Reconnaissance de la Danse 4 Temps par la Fédération Française de Danse
-                </p>
-            </div>
-
+      <div class="row">
+        <div class="col-md-1 col-2">
+          <i class="fa fa-book fa-2x cyan-text"></i>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/ethique.png' %}" class="img-fluid" alt="Sample project image">
-                <a>
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4>
-                    <strong>Avril 2018</strong>
-                </h4>
-                <p>Charte déontologique des professeurs de Danse 4 Temps
-                </p>
-            </div>
+        <div class="col-md-11 col-10">
+          <p>Le pôle Passes a pour vocation de recenser et classer les passes de Danse 4 Temps.</p>
         </div>
-        <!--Grid column-->
+      </div>
 
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/structuration.png' %}" class="img-fluid" alt="Sample project image">
-                <a><div class="mask rgba-white-slight"></div></a>
-            </div>
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4><strong>Juin 2018</strong></h4>
-                <p>Caractérisation de la Danse 4 Temps et de ses notions techniques</p>
-            </div>
+      <div class="row">
+        <div class="col-md-1 col-2">
+          <i class="fa fa-code fa-2x cyan-text"></i>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/passes.png' %}" class="img-fluid" alt="Sample project image">
-                <a><div class="mask rgba-white-slight"></div></a>
-            </div>
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4><strong>Juillet 2018</strong></h4>
-                <p>Définition de la notion de passe et début de constitution du corpus</p>
-            </div>
+        <div class="col-md-11 col-10">
+          <p>Il travaille aux projets suivants :</p>
+          <ul>
+            <li>Système de classification</li>
+            <li>Nomenclature</li>
+            <li>Définition des notions</li>
+            <li>Corpus de passes</li>
+          </ul>
         </div>
-        <!--Grid column-->
+      </div>
     </div>
-    <!--Grid row-->
 
-    <p class="text-center"><a class="btn btn-red">En savoir plus</a></p>
-  </section>
+    <div class="col-lg-3">
+      <img src="{% static 'img/poles/passes.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+    </div>
   </div>
 
-  <div class="jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(http://localhost:8000/static/img/meeting.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100px;">
-    <div class="mask rgba-red-strong">
-      <div class="container-fluid py-4 align-items-center justify-content-center text-white">
-        <div class="row mt-5 mb-2">
-          <div class="col-md-8 offset-md-2">
-            <h1> L'Académie de Danse 4 Temps</h1>
-            <div class="row">
-              <div class="col-md-6">
-                <p>L'Académie est organisée autour de neuf pôles ayant pour mission de développer la Danse 4 Temps.
-                  Chaque pôle est représenté au Conseil d'Administration, qui se réunit tous les mois.
-                  Les représentants de pôles sont élus parmi les membres de l'AD4T.
-                </p>
+    <hr class="my-5">
 
-                <p class="text-center">
-                  <a class="btn" hfref="#">En savoir plus</a>
-                </p>
-              </div>
+    <div class="row">
+      <div class="col-lg-3 offset-lg-1 mb-lg-0 mb-5">
+        <img src="{% static 'img/poles/ressources.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+      </div>
 
-            </div>
+      <div class="col-lg-7">
+        <h3 class="text-center font-weight-bold deep-orange-text">Ressources</h3>
+
+        <div class="row">
+          <div class="col-md-1 col-2">
+            <i class="fa fa-book fa-2x deep-orange-text"></i>
+          </div>
+          <div class="col-md-11 col-10">
+            <p>Le pôle Structuration a pour vocation de définir l’identité sportive et le fonctionnement fédéral de la discipline​.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1 col-2">
+            <i class="fa fa-code fa-2x deep-orange-text"></i>
+          </div>
+          <div class="col-md-11 col-10">
+            <p>Il travaille aux projets suivants :</p>
+            <ul>
+              <li>Définition de la Danse 4 Temps</li>
+              <li>Système de niveaux des danseurs</li>
+              <li>Certification professorale</li>
+              <li>Certification du corps arbitral</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
+    <hr class="my-5">
 
-  <!--Grid row-->
+    <div class="row">
+      <div class="col-lg-7 offset-lg-1">
+        <h3 class="text-center font-weight-bold indigo-text">Structuration</h3>
 
-<section>
-  <div class="row text-center my-5">
-      <!--Grid column-->
-      <div class="col">
-        <div class="text-center">
-          <!--Title-->
-          <h1 class="card-title h2-responsive font-bold"><strong>Rejoignez-nous !</strong></h1>
-          <!--Text-->
-          <div class="justify-content-center">
+        <div class="row">
+          <div class="col-md-1 col-2">
+            <i class="fa fa-book fa-2x indigo-text"></i>
+          </div>
+          <div class="col-md-11 col-10">
+            <p>Le pôle Structuration a pour vocation de définir l’identité sportive et le fonctionnement fédéral de la discipline​.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-1 col-2">
+            <i class="fa fa-code fa-2x red-text"></i>
+          </div>
+          <div class="col-md-11 col-10">
+            <p>Il travaille aux projets suivants :</p>
+            <ul>
+              <li>Définition de la Danse 4 Temps</li>
+              <li>Système de niveaux des danseurs</li>
+              <li>Certification professorale</li>
+              <li>Certification du corps arbitral</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <img src="{% static 'img/poles/structuration.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+      </div>
+    </div>
+
+      <hr class="my-5">
+      <div class="row">
+        <div class="col-lg-3 offset-lg-1 mb-lg-0 mb-5">
+          <img src="{% static 'img/poles/communication.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+        </div>
+
+        <div class="col-lg-7">
+          <h3 class="text-center font-weight-bold pink-text">Communication</h3>
+
+          <div class="row">
+            <div class="col-md-1 col-2">
+              <i class="fa fa-book fa-2x pink-text"></i>
+            </div>
+            <div class="col-md-11 col-10">
+              <p>Le pôle Structuration a pour vocation de définir l’identité sportive et le fonctionnement fédéral de la discipline​.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1 col-2">
+              <i class="fa fa-code fa-2x pink-text"></i>
+            </div>
+            <div class="col-md-11 col-10">
+              <p>Il travaille aux projets suivants :</p>
+              <ul>
+                <li>Définition de la Danse 4 Temps</li>
+                <li>Système de niveaux des danseurs</li>
+                <li>Certification professorale</li>
+                <li>Certification du corps arbitral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="row">
+        <div class="col-lg-7 offset-lg-1">
+          <h3 class="text-center font-weight-bold light-green-text">Site Web</h3>
+
+          <div class="row">
+            <div class="col-md-1 col-2">
+              <i class="fa fa-book fa-2x light-green-text"></i>
+            </div>
+            <div class="col-md-11 col-10">
+              <p>Le pôle Structuration a pour vocation de définir l’identité sportive et le fonctionnement fédéral de la discipline​.</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-1 col-2">
+              <i class="fa fa-code fa-2x light-green-text"></i>
+            </div>
+            <div class="col-md-11 col-10">
+              <p>Il travaille aux projets suivants :</p>
+              <ul>
+                <li>Définition de la Danse 4 Temps</li>
+                <li>Système de niveaux des danseurs</li>
+                <li>Certification professorale</li>
+                <li>Certification du corps arbitral</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <img src="{% static 'img/poles/site.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+        </div>
+      </div>
+
+        <hr class="my-5">
+        <div class="row">
+          <div class="col-lg-3 offset-lg-1 mb-lg-0 mb-5">
+            <img src="{% static 'img/poles/secretariat.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+          </div>
+
+          <div class="col-lg-7">
+            <h3 class="text-center font-weight-bold red-text">Secrétariat</h3>
+
             <div class="row">
-              <div class="col-6">
-                <p class="card-text my-2" style="max-width: 43rem;">
-                  <strong>Soutenez notre action</strong> </br>
-                  Votre adhésion nous aide réellement à grandir. Votre cotisation nous permet de payer l’hébergement du site et donne du poids à nos actions vis-à-vis de la Fédération Française de Danse.
-                </p>
+              <div class="col-md-11 col-10 offset-md-1">
+                <p>Le pôle Secrétariat %%TODO</p>
               </div>
-              <div class="col-6">
-                <p class="card-text my-2" style="max-width: 43rem;">
-                  <strong>Exprimez-vous</strong> </br>
-                  Rejoignez une communauté de passionnés et participez activement à l'un de nos projets : corpus de passes, annuaire des clubs, définition, structuration, publication de guides…
-                </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-11 col-10 offset-md-1">
+                <p>Il porte les projets suivants :</p>
+                <ul>
+                  <li>.</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <p class="text-center mt-3">
-          <a class="btn btn-red" hfref="#">Adhérer</a>
-        </p>
-      </div>
-    </div>
-  </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+          <div class="col-lg-7 offset-lg-1">
+            <h3 class="text-center font-weight-bold purple-text">Gestion</h3>
+
+            <div class="row">
+              <div class="col-md-11 col-10 offset-md-1">
+                <p>Le pôle Gestion veille au bon fonctionnement des pôles.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-11 col-10 offset-md-1">
+                <p>Il travaille sur les projets suivants :</p>
+                <ul>
+                  <li>Gestion des outils collaboratifs</li>
+                  <li>Conception de modèles de documents et de slides</li>
+                  <li>Coordination des actions des pôles</li>
+                  <li>Suivi des projets et des deadlines</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <img src="{% static 'img/poles/gestion.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+          </div>
+        </div>
+
+          <hr class="my-5">
+          <div class="row">
+            <div class="col-lg-3 offset-lg-1 mb-lg-0 mb-5">
+              <img src="{% static 'img/poles/tresorerie.png'%}" alt="Sample project image" class="img-fluid rounded z-depth-1">
+            </div>
+
+            <div class="col-lg-7">
+              <h3 class="text-center font-weight-bold amber-text">Trésorerie</h3>
+              <div class="row">
+                <div class="col-md-11 col-10 offset-md-1">
+                  <p>Le pôle Trésorerie gère les finances de l'association.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
 </section>
-
-
 
 {% endblock %}
