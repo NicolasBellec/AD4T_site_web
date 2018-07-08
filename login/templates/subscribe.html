@@ -2,23 +2,22 @@
 {% load static %}
 {% block title %}Inscription{% endblock %}
 {% block content %}
-<h1>S'inscrire</h1>
 
-{% if user.is_authenticated %}
+<section class="form-red">
+  <h2 class="text-center h1 py-5">S'inscrire</h2>
+  {% if user.is_authenticated %}
+    <p class="text-center mb-5">Vous êtes déjà connecté, {{ user.username }} !</p>
 
-Vous êtes déjà connecté, {{ user.username }} !
-
-{% else %}
-
-<form method="post">
-
-    {% csrf_token %}
-
-    {{ form.as_p }}
-
-    <input type="submit" value="S'inscrire" />
-
-</form>
-
-{% endif %}
+  {% else %}
+  <div class="row">
+    <div class="col text-center">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="S'inscrire" />
+      </form>
+    </div>
+  </div>
+  {% endif %}
+</section>
 {% endblock %}
