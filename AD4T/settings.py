@@ -82,13 +82,14 @@ WSGI_APPLICATION = 'AD4T.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
-
+""" REMOVING LOCAL DATABASE TO USE HEROKU
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+"""
 
 
 # Password validation
@@ -152,3 +153,9 @@ EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'tmp/email/app-mail')
 #EMAIL_HOST_PASSWORD =
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #collectstatic support
+
+# Parse database configuration from $DATABASE_URL for Heroku
+import dj_database_url
+...
+db_from_env = dj_database_url.config(conn_max_age=500, require_ssl=True)
+DATABASES['default'].update(db_from_env)
