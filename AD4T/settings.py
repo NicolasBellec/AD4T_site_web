@@ -84,11 +84,16 @@ WSGI_APPLICATION = 'AD4T.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 # [Warning] Local database is later updated to use HEROKU
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
+"""
+DATABASES = {
+    'default': {}
 }
 
 
