@@ -25,7 +25,10 @@ SECRET_KEY = '1c0x+b)63ln##x8%)lp%(9)vrq((v!ha+i$y_71b^69g#44fa7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'ad4t-qualif.herokuapp.com',
+    'localhost'
+]
 
 
 # Application definition
@@ -92,10 +95,17 @@ DATABASES = {
     }
 }
 """
+# local postgres database, dev password (not used in qualif / prod)
 DATABASES = {
-    'default': {}
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ad4t-dev',
+        'USER': 'oeiirodmrspdpo',
+        'PASSWORD': 'zeraerrzerzaesdfvsef$57679664!',
+        'HOST': '',
+        'PORT': '5432',
+    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
@@ -161,6 +171,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #collectstatic support
 
 # Parse database configuration from $DATABASE_URL for Heroku
 import dj_database_url
-...
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
