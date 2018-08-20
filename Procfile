@@ -1,1 +1,1 @@
-web: gunicorn ad4t-qualif.wsgi --log-file -
+web: gunicorn AD4T.wsgi --log-file -
