@@ -25,9 +25,11 @@ SECRET_KEY = '1c0x+b)63ln##x8%)lp%(9)vrq((v!ha+i$y_71b^69g#44fa7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# TODO remove localhost & 127.0.0.1 for production use
 ALLOWED_HOSTS = [
     'ad4t-qualif.herokuapp.com',
-    'localhost'
+    'localhost',
+    '127.0.0.1'
 ]
 
 
@@ -100,6 +102,7 @@ DATABASES = {
 }
 
 # local postgres database, dev password (not used in qualif / prod)
+# to be used locally instead of Sqlite3 for further developpment and qalif-dev database syncing
 """
 DATABASES = {
     'default': {
@@ -175,6 +178,7 @@ EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'tmp/email/app-mail')
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #collectstatic support
 
 # Parse database configuration from $DATABASE_URL for Heroku
+# this replaces the database configuration if the DATABASE_URL env var is set
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
