@@ -1,20 +1,26 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block title %}Inscription{% endblock %}
 {% block content %}
 
 <section class="form-red">
-  <h2 class="text-center h1 py-5">S'inscrire</h2>
+  <h2 class="text-center h1 py-5">S'inscrire et adhérer</h2>
   {% if user.is_authenticated %}
     <p class="text-center mb-5">Vous êtes déjà connecté, {{ user.username }} !</p>
 
   {% else %}
   <div class="row">
     <div class="col text-center">
+      <p>Ce formulaire vous permet de vous inscrire et d'adhérer à notre association. <br/>Vous aurez ainsi accès à de nombreux documents réservés à nos membres. <br/>Les frais d'adhésion sont fixés à 1€.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 offset-4 text-center">
       <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="S'inscrire" />
+        {{ form |crispy }}
+        <button type="submit" class="btn btn-grey">S'inscrire</button>
       </form>
     </div>
   </div>

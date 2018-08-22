@@ -1,190 +1,60 @@
-{% extends "base.html" %}
-{% load static %}
-{% block title %}Académie de Danse 4 Temps{% endblock %}
-{% block home_active %}class="active"{% endblock %}
-{% block content %}
-<section class="py-5">
+{% extends "base.html" %} {% load static %} {% block title %}Académie de Danse 4 Temps{% endblock %} {% block home_active %}class="active"{% endblock %} {% block content %}
+<section class="py-4">
   <!--Section heading-->
-  <h1 class="text-center display-4 py-5 mt-5">Développons la Danse 4 Temps !</h1>
+  <h1 class="text-center display-5 py-5">Découvrez la Danse 4 Temps !</h1>
   <!--Section description-->
-  <p class="px-5 mb-5 pb-3 lead text-center">
-     Au sein de l'Académie de Danse 4 Temps (AD4T), nous organisons la Danse 4 Temps en tant que pratique sportive, artistique et sociale. Nous soutenons tous les acteurs du milieu dans le développement de leurs activités.
-  </p>
-  <p class="pt-5 text-center">
-    <em>L'Assemblée Générale 2018 aura lieu le dimanche 14 octobre à 14h. Toutes les informations sur notre <a href="#">Facebook</a>.</em>
+  <p class="px-5 mb-5 lead text-center">
+    Grâce aux efforts de l'Académie de Danse 4 Temps (AD4T), la Danse 4 Temps a été reconnue en juillet 2017 par la <a href="https://www.ffdanse.fr/">Fédération Française de Danse</a> et est définie comme suit :
   </p>
 
-</section>
-</div>
+  <p>
+    Le 4 Temps est une danse de couple dont les premiers courants apparaissent au milieu du XXe siècle en France. Praticable sur tout type de musique dont la mesure dure quatre temps, elle se danse sans pas de base universel selon une ligne de déplacement qui dépend duguidage initié par le cavalier et de sa réponse par la cavalière. Les déplacementss'effectuent sur le rythmede la musique, chaque temps pouvant être marqué par un transfert du poids du corps ou un pas sans transfert. Le contact entre les cadres des partenaires s'effectue par une connexion permanente non linéaire, majoritairement au niveau des mains, dont l'intensité varie en compression ou en extension selon l'intention des danseurs. Une bonne posture est nécessaire à la transmission du guidage, depuis son intention jusqu'à sa compréhension. Le centre de gravité du couple est majoritairement fixe ; les danseurs s'en rapprochent et s'en éloignent selon une certaine symétrie. Les passes sont caractérisées par une série de mouvements commençant et finissant par une reprise de connexion en extension et un ancrage plus ou moins accentué. L'enchaînement de ces passes permet l'expression d'une grande diversité de styles, constitués notamment de stylings suivant des règles esthétiques.
+  </p>
 
-<div class="jarallax" data-jarallax='{"speed": 0.8}' style="background-image: url(http://localhost:8000/static/img/party.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100px;">
-<div class="mask rgba-red-strong">
-    <div class="container-fluid py-4 align-items-center justify-content-center text-white">
-      <div class="row mt-5 mb-2">
-        <div class="col-md-4 offset-md-6">
-          <h1> La Danse 4 Temps </h1>
-          <p>La Danse 4 Temps est une danse de couple. Elle est connue sous diverses appellations : c'est le "rock 4 temps", le "rock moderne", le "rock étudiant".</p>
-          <p>Toutes ces variantes sont représentées au sein de l'AD4T ; elles partagent notamment une technique de connexion similaire.</p>
-          <p>La Danse 4 Temps est une discipline jeune et pleine de promesses, qui a dépassé ses racines swing pour se forger une identité propre.</p>
-          <p class="text-center"><a class="btn" hfref="#">Découvrir</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <h2>D'où vient son nom ?</h2>
+  <p>
+    Vous connaissez peut-être la Danse 4 Temps sous le nom de « rock 4 temps », « rock à 4 temps », « rock moderne », « rock étudiant », « rock versaillais », « rock des mariages » ? Plusieurs raisons expliquent que nous avons officiellement abandonné le
+    mot « rock » du nom de la danse. Rassurez-vous, vous pouvez continuer à l'employer !
+  </p>
+  <ul>
+    <li>À la Fédération Française de Danse et dans les milieux professionnels, le « rock » est la danse « rock 6 temps », qui n'a rien à voir avec notre danse !</li>
+    <li>Les néophytes confondent les rock 6 temps et 4 temps. Nous souhaitons nous démarquer du rock et nous affirmer comme une discipline à part entière.</li>
+    <li>Le tango, la salsa, la valse et bien d'autres portent le nom du genre musical sur lequel on les danse. Or, nous ne dansons plus seulement le 4 Temps sur du rock'n'roll, mais sur de nombreux genre musicaux !</li>
+  </ul>
+  <p>
+    Conformément à notre manifeste, nous cherchons à "représenter toutes les pratiques de Danse 4 Temps sans préjugés sur le style ou le niveau des pratiquants". Ainsi, si une communauté estime que le mot "rock" est une part importante de son identité (ex : le rock moderne), elle peut tout à fait le conserver.
+  </p>
 
-<div class="container">
-<section class="my-5">
-    <!--Section heading-->
-    <h1 class="display-4 text-center py-5">
-        Quelques-unes de nos réalisations
-    </h1>
-    <!--Grid row-->
-    <div class="row text-center">
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-12 mb-4">
-
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/communication.png' %}" class="img-fluid" alt="Sample project image">
-                <a>
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4>
-                    <strong>Juillet 2017</strong>
-                </h4>
-                <p>Reconnaissance de la Danse 4 Temps par la Fédération Française de Danse
-                </p>
-            </div>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/ethique.png' %}" class="img-fluid" alt="Sample project image">
-                <a>
-                    <div class="mask rgba-white-slight"></div>
-                </a>
-            </div>
-
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4>
-                    <strong>Avril 2018</strong>
-                </h4>
-                <p>Charte déontologique des professeurs de Danse 4 Temps
-                </p>
-            </div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/structuration.png' %}" class="img-fluid" alt="Sample project image">
-                <a><div class="mask rgba-white-slight"></div></a>
-            </div>
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4><strong>Juin 2018</strong></h4>
-                <p>Caractérisation de la Danse 4 Temps et de ses notions techniques</p>
-            </div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4">
-            <!--Featured image-->
-            <div class="view overlay rounded z-depth-1">
-                <img src="{% static 'img/poles/passes.png' %}" class="img-fluid" alt="Sample project image">
-                <a><div class="mask rgba-white-slight"></div></a>
-            </div>
-            <!--Excerpt-->
-            <div class="card-body mt-3">
-                <h4><strong>Juillet 2018</strong></h4>
-                <p>Définition de la notion de passe et début de constitution du corpus</p>
-            </div>
-        </div>
-        <!--Grid column-->
-    </div>
-    <!--Grid row-->
-
-    <p class="text-center"><a class="btn btn-red">En savoir plus</a></p>
-  </section>
-  </div>
-
-  <div class="jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url(http://localhost:8000/static/img/meeting.jpg); background-repeat: no-repeat; background-size: cover; background-position: center center; min-height: 100px;">
-    <div class="mask rgba-red-strong">
-      <div class="container-fluid py-4 align-items-center justify-content-center text-white">
-        <div class="row mt-5 mb-2">
-          <div class="col-md-8 offset-md-2">
-            <h1> L'Académie de Danse 4 Temps</h1>
-            <div class="row">
-              <div class="col-md-6">
-                <p>L'Académie est organisée autour de neuf pôles ayant pour mission de développer la Danse 4 Temps.
-                  Chaque pôle est représenté au Conseil d'Administration, qui se réunit tous les mois.
-                  Les représentants de pôles sont élus parmi les membres de l'AD4T.
-                </p>
-
-                <p class="text-center">
-                  <a class="btn" hfref="#">En savoir plus</a>
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-
-  <!--Grid row-->
-
-<section>
-  <div class="row text-center my-5">
-      <!--Grid column-->
-      <div class="col">
-        <div class="text-center">
-          <!--Title-->
-          <h1 class="card-title h2-responsive font-bold"><strong>Rejoignez-nous !</strong></h1>
-          <!--Text-->
-          <div class="justify-content-center">
-            <div class="row">
-              <div class="col-6">
-                <p class="card-text my-2" style="max-width: 43rem;">
-                  <strong>Soutenez notre action</strong> </br>
-                  Votre adhésion nous aide réellement à grandir. Votre cotisation nous permet de payer l’hébergement du site et donne du poids à nos actions vis-à-vis de la Fédération Française de Danse.
-                </p>
-              </div>
-              <div class="col-6">
-                <p class="card-text my-2" style="max-width: 43rem;">
-                  <strong>Exprimez-vous</strong> </br>
-                  Rejoignez une communauté de passionnés et participez activement à l'un de nos projets : corpus de passes, annuaire des clubs, définition, structuration, publication de guides…
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="text-center mt-3">
-          <a class="btn btn-red" hfref="#">Adhérer</a>
-        </p>
-      </div>
-    </div>
-  </div>
+  <h2>Est-ce du Ceroc ?</h2>
+  <p>
+    Non ! :) Ce n'est pas non plus du discofox ou du 4-count-hustle. Ces danses se ressemblent certes beaucoup et on peut danser aisément les uns avec les autres, pour autant les principes techniques diffèrent.
+  </p>
 </section>
 
+<hr />
 
+<section class="py-4">
+  <!--Section heading-->
+  <h1 class="text-center display-5 py-5">Découvrez les objectifs de l'Académie</h1>
+  <!--Section description-->
+  <p class="px-5 mb-2 lead text-center">
+    L'Académie de Danse 4 Temps (AD4T) œuvre pour le développement de la discipline selon deux axes
+  </p>
+  <ul>
+    <li><strong>Développer la pratique et la communauté</strong> : l’Académie soutient tous les acteurs du milieu dans le développement de leurs activités : recensement d’événements (cours, soirées, tournois …), communication autour du 4 Temps, aide à l’organisation d’événements, etc.</li>
+    <li><strong>Développer la discipline</strong> : en concertation avec la Fédération Française de Danse, l’Académie organise la danse 4 Temps en tant que pratique sportive : caractérisation, certification des professeurs, formation des juges, organisation de compétitions officielles, etc.
+  </ul>
+  <p>
+    À cette fin, l'AD4T organise de nombreux <a href=/"projects">projets</a> et sondages d'opinion.
+  </p>
+
+  <h2>L'AD4T cherche-t-elle à uniformiser la discipline ?</h2>
+  <p>
+    On danse le 4 Temps différemment à Lille, à Rennes, à Paris, en Suisse et en Belgique. Ces variantes font notre force et l'AD4T défend la diversité et la conservation des pratiques régionales. Nous nous engageons à représenter toutes les pratiques de Danse 4 Temps sans préjugés sur le style ou le niveau des pratiquants. Si vous estimez que nous méconnaissons votre variante, <a href="contact">venez-nous en parler</a> !
+  </p>
+  <p>
+    Nous défendons fermement une danse technique et respectueuse des individus. Dans cette optique, nous faisons l'apologie de principes de danse permettant de mieux danser et de ne pas se blesser : le rythme, la connexion, la posture ou encore la stabilité dans le rapport au sol (ancrage). Ces principes de danse sont compatibles avec les différentes variantes de 4 Temps et ne s'exprimeront pas de la même manière.
+  </p>
+</section>
 
 {% endblock %}
