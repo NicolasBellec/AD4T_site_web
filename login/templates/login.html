@@ -4,8 +4,8 @@
 {% block title %}Connexion{% endblock %}
 {% block content %}
 
-<section class="form-red">
-  <h2 class="text-center h1 py-5">Se connecter</h2>
+<section class="form-red py-4">
+  <h1 class="text-center display-5 py-5">Se connecter</h1>
   {% if user.is_authenticated %}
     <p class="text-center mb-5">Vous êtes connecté, {{ user.username }} !</p>
 

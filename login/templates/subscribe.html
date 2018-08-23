@@ -3,9 +3,8 @@
 {% load static %}
 {% block title %}Inscription{% endblock %}
 {% block content %}
-
-<section class="form-red">
-  <h2 class="text-center h1 py-5">S'inscrire et adhérer</h2>
+<section class="form-red py-4">
+  <h1 class="text-center display-5 py-5">S'inscrire et adhérer</h1>
   {% if user.is_authenticated %}
     <p class="text-center mb-5">Vous êtes déjà connecté, {{ user.username }} !</p>
 
