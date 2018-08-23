@@ -60,15 +60,17 @@
             <a class="p-2" href="/news">News</a>
             <a class="p-2" href="/contact">Contact</a>
 {% if user.is_authenticated %}
-            <a tabindex="0" class="p-2" href="#">Annuaire</a>
-            <a tabindex="0" class="p-2" href="/blog">Blog</a>
+            <a tabindex="0" class="p-2" href="communication">Communauté</a>
+            <!-- <a tabindex="0" class="p-2" href="/blog">Blog</a> -->
+            <a tabindex="0" class="p-2" href="/ethique">Éthique</a>
             <a tabindex="0" class="p-2" href="/passes">Passes</a>
-            <a tabindex="0" class="p-2" href="#">Structuration</a>
+            <a tabindex="0" class="p-2" href="structuration">Structuration</a>
             <a tabindex="0" class="p-2" href="/ressources/page=0">Ressources</a>
 
 {% else %}
-            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Annuaire</a>
-            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Blog</a>
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Communauté</a>
+            <!-- <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Blog</a> -->
+            <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Éthique</a>
             <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Passes</a>
             <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Structuration</a>
             <a tabindex="0" class="p-2 text-muted" href="#" data-trigger="focus" data-toggle="popover" data-placement="bottom" data-content="Réservé aux adhérents.">Ressources</a>
