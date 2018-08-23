@@ -15,3 +15,8 @@ def projects(request):
     title = "Nos projets"
     description = ""
     return render(request, 'projects.html', {'title':title, 'description':description})
+
+def news(request):
+    title = "Avancées majeures de l'AD4T"
+    description = ""
+    return render(request, 'news.html', {'title':title, 'description':description})

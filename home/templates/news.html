@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Académie de Danse 4 Temps{% endblock %}
+{% block news_active %}class="active"{% endblock %}
+{% block content %}
+
+<section class="form-red py-4">
+
+  <!--Section heading-->
+  <h1 class="text-center display-5 py-5">Avancées majeures</h1>
+      <p class="px-5 mb-5 lead text-center">Pour plus d'informations, suivez notre <a href="https://www.facebook.com/academie4temps" target="_blank">page Facebook</a> !</p>
+  <hr/>
+  <div class="timeline">
+    <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+      <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+        <h3 class=" text-light">Assemblée Générale</h3>
+        <p> Notre prochaine AG aura lieu le 14 octobre. Vous êtes tous cordialement invités ! Nous passerons en revue notre mandat de 2018 et élirons le CA 2019. Vous avez jusqu'au 7 septembre pour candidater !</p>
+      </div>
+      <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+        <img src="{% static 'img/icons/com.png'%}" class="img-fluid" alt="img">
+      </div>
+      <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+        <time>14 octobre 2018</time>
+      </div>
+    </div>
+    <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+      <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+        <h3 class=" text-light">Charte déontologique profs</h3>
+        <p>Le Pôle Éthique a finalisé une <u><a href="https://drive.google.com/file/d/1ODowajTSbh2gGG-chWMq11O5tkl41KpS/view" target="_blank">Charte Déontologique</a></u> à destination des professeurs de Danse 4 Temps. Cette charte est librement disponible pour tout club qui souhaiterait l’adopter ou s’en inspirer !</p>
+      </div>
+      <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+        <img src="{% static 'img/icons/doc.png'%}" class="img-fluid" alt="img">
+      </div>
+      <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+        <time>juillet 2018</time>
+      </div>
+    </div>
+    <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+      <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+        <h3 class=" text-light">Définition de la danse</h3>
+        <p>Le pôle Structuration a proposé une <u><a href="https://drive.google.com/file/d/1i1POSLDsvWHwS2dZw-blaNROrH1BYe7D/view" target="_blank">définition officielle</a></u> de la danse et des notions techniques.</p>
+      </div>
+      <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+        <img src="{% static 'img/icons/doc.png'%}" class="img-fluid" alt="img">
+      </div>
+      <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+        <time>juin 2018</time>
+      </div>
+    </div>
+    <!-- <div class="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
+      <div class="col-10 col-md-5 order-3 order-md-1 timeline-content">
+        <h3 class=" text-light">Timeline Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eaque amet deleniti hic quas qui cumque delectus aliquid, eius quia quod, quae, aliquam aspernatur facilis. Minima quod corporis dignissimos porro.</p>
+      </div>
+      <div class="col-2 col-sm-1 px-md-3 order-2 timeline-image text-md-center">
+        <img src="img/img13.png" class="img-fluid" alt="img">
+      </div>
+      <div class="col-10 col-md-5 order-1 order-md-3 py-3 timeline-date">
+        <time>2018-02-23</time>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+{% endblock %}
