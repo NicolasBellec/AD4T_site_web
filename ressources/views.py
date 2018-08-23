@@ -4,7 +4,7 @@ from django.utils import timezone
 from ressources.models import Ressource
 
 # Create your views here.
-@login_required()
+#@login_required()
 def ressourcesView(request, page = 0, *opts, **named_opts):
     articles_per_page = 10
     all_articles = Ressource.objects.all()

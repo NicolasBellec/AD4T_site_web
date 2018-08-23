@@ -20,3 +20,18 @@ def news(request):
     title = "Avancées majeures de l'AD4T"
     description = ""
     return render(request, 'news.html', {'title':title, 'description':description})
+
+def communication(request):
+    title = "Clubs et communautés de Danse 4 Temps"
+    description = ""
+    return render(request, 'communication.html', {'title':title, 'description':description})
+
+def ethique(request):
+    title = "Travaux du pôle Éthique"
+    description = ""
+    return render(request, 'ethique.html', {'title':title, 'description':description})
+
+def structuration(request):
+    title = "Travaux du pôle Structuration"
+    description = ""
+    return render(request, 'structuration.html', {'title':title, 'description':description})
