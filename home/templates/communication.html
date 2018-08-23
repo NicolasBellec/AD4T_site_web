@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% load static %} {% block title %}Académie de Danse 4 Temps{% endblock %} {% block home_active %}class="active"{% endblock %} {% block content %}
+<section class="py-4">
+  <!--Section heading-->
+  <h1 class="text-center display-5 py-5">Communauté</h1>
+  <!--Section description-->
+  <p class="px-5 mb-5 lead text-center">
+    Afin de décloisonner le territoire et d'enrichir les échanges entre les communautés, l'AD4T recense les clubs et les écoles de danse.
+  </p>
+
+<div class="row">
+  <div class="col-3">
+    <div class="card h-100">
+      <a href="https://www.google.com/maps/d/drive?state=%7B%22ids%22%3A%5B%221BQmWasKtKLM60s029HkS2G76izg4kygM%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22113339584820927017383%22%7D&usp=sharing"><img class="card-img-top" src="{% static "/img/cards/map.png"%}" alt="Card image cap"></a>
+      <div class="card-body text-center">
+        <p class="h4 card-title">Carte des clubs</p>
+        <!-- <a href="https://www.google.com/maps/d/drive?state=%7B%22ids%22%3A%5B%221BQmWasKtKLM60s029HkS2G76izg4kygM%22%5D%2C%22action%22%3A%22open%22%2C%22userId%22%3A%22113339584820927017383%22%7D&usp=sharing" class="btn btn-primary">Accéder</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<hr/>
+<p class="mt-5">
+  N'oubliez pas que ces documents sont réservés aux adhérents. Merci de ne pas les diffuser sans autorisation.
+</p>
+
+</section>
+
+{% endblock %}
